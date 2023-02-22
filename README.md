@@ -27,34 +27,34 @@ enter a name, if the name is in TV Maze's database, the api will store the infor
 ### 2, GET method: url: /actor/{id}
 This operation retrieves an actor by their lD.
 **example:** entering '4'
-![get by ID example](img\getID.png "get an actor's infomation by id")
+![get by ID example](img/getID.png "get an actor's infomation by id")
 <br><br>
 
 ### 3, DELETE method: url: /actor/{id}
 This operation deletes an existing actor from the database.  
 **example:** entering '6'
-![delete example](img\delete0.png "delete an actor's infomation by id")  
+![delete example](img/delete0.png "delete an actor's infomation by id")  
 **before deleting:**
-![before deleting](img\delete1.png "before deleting")    
+![before deleting](img/delete1.png "before deleting")    
 **after deleting:**
-![after deleting](img\delete2.png "after deleting")  
+![after deleting](img/delete2.png "after deleting")  
 <br><br>
 
 ### 4,  PATCH method: url: /actor/{id}  
 This operation partially updates the details of an actor. (The identifier cannot be changed)
 **example:** 
-![patch example](img\patch.png "patch")   
+![patch example](img/patch.png "patch")   
 **before update:**
-![before patcb](img\delete2.png "before patch")    
+![before patcb](img/delete2.png "before patch")    
 **after update:**
-![get by ID example](img\patch1.png "after patch")    
+![get by ID example](img/patch1.png "after patch")    
 <br><br>
 
 ### 5,  GET method: url: /actor
 This operation retrieves all available actors. All four parameters are optional with default values being "order=+id", "page=1", and "size =10",filter="id,name". "page" and "size" are used for pagination; "size" shows the number of actors per page. "order" is a comma-separated string value to sort the list based on the given criteria, The string consists of two parts.the first part is a special character '+' or '-' where '+' indicates ordering ascendingly, and '-' indicates orderingdescendingly. The second part is an attribute name which is one of {id, name, country, birthday, deathday, last-update}.  
 **example:** 
-![get  example](img\getAll0.png "get") 
-![get  example](img\getAll1.png "get")   
+![get  example](img/getAll0.png "get") 
+![get  example](img/getAll1.png "get")   
 <br><br>
 
 ### 6, GET method: url: /actor/statistics
@@ -62,10 +62,8 @@ This operation accepts a parameter called "format" which can be either "json" or
 Actors break down by an attribute determined by the "by" parameter (a comma-separated value); this parameter can be any of the following Actors' attributes: "country" (showing the percentage of actors per country), "birthday", "gender", and "life status" (represents what percentages of actors are alive).   
 **example:**   
 **get json:** 
-![get  json example](img\getJson.png "get json")   
+![get  json example](img/getJson.png "get json")   
 **get image:** 
-![get  json example](img\getImage.png "get image") 
-
-
+![get  json example](img/getImage.png "get image") 
 
 
