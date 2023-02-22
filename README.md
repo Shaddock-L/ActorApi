@@ -21,7 +21,7 @@ pandas 1.4.2
 ### 1, POST method: url: /actors  
 enter a name, if the name is in TV Maze's database, the api will store the information into our local databse.   
 **example:** entering 'Elizabeth Olsen'
-![post example](img\post.png "create an actor")
+![post example](.\img\post.png "create an actor")
 <br><br>
 
 ### 2, GET method: url: /actor/{id}
